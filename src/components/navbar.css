@@ -1,20 +1,64 @@
-.theme{
-  position:absolute;
+.theme {
+  position: absolute;
   display: flex;
-  gap:10px;
-  top:10%;
-  right:3%;
+  gap: 10px;
+  top: 10%;
+  right: 3%;
+  z-index: 1;
 }
-.themes{
-  width: 10px;  
-  text-align:center;
-  height:3px;
+.themes {
+  width: 10px;
+  text-align: center;
+  height: 3px;
   border: 1px solid white;
   padding: 10px;
   margin-top: 15px;
-  cursor: pointer; 
+  cursor: pointer;
   border-radius: 10%;
 }
-.theme-active{
-  border-radius:50% !important;
+.theme-active {
+  border-radius: 50% !important;
+}
+.profileDetails {
+  width: 100%;
+  height: calc(100vh - 74px);
+}
+.top video {
+  width: 100vw;
+  height: 35vh;
+  object-fit: cover;
+  margin-bottom: -60px;
+  z-index: -1;
+}
+.middle {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.middle img {
+  width: 140px;
+  height: 140px;
+  clip-path: circle(50%);
+  margin-bottom: 20px;
+}
+.hireButton{
+  position: absolute;
+  bottom:0;
+  width: 100vw;
+  height: 100px;  
+  border: 1px solid lightgrey;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hire_buttons{
+  border: 1px solid lightgrey;
+  width: 100vw;
+  height: 90px;
+}
+.icon{
+  font-size:25px !important;
+  cursor: pointer;
 }

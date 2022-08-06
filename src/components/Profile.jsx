@@ -1,36 +1,46 @@
-import { Button, ButtonGroup, Stack, Typography } from "@mui/material";
+import { Button, ButtonGroup, Grid, Stack, Typography } from "@mui/material";
 import React from "react";
-
+import DownloadForOfflineIcon from "@mui/icons-material/DownloadForOffline";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import CallIcon from "@mui/icons-material/Call";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 const Profile = () => {
   return (
     <>
       <div className="profileDetails">
         <div className="top">
           <video preload="auto" autoplay={"autoplay"} loop muted>
-            <source src="https://player.vimeo.com/external/357563488.sd.mp4?s=b1cfbc7c4eb11d8a10dc5dfe36ed63466cb3da61&profile_id=164&oauth2_token_id=57447761" />
+            <source src="./assets/video/bg.mp4" />
           </video>
         </div>
         <div className="middle">
           <img src="./assets/images/123.jpeg" alt="" />
         </div>
         <div className="end">
-          <Stack spacing={2}>
-            <Typography variant="h3" className="text-center ">
-              Manikandan M
-            </Typography>
-            <Typography variant="h6" className="text-center text-warning">
-              web developer
-            </Typography>
+          <Stack spacing={1} textAlign="center" marginTop="35px">
+            <Typography variant="h3">Manikandan M</Typography>
+            <Typography variant="h6">web developer</Typography>
           </Stack>
         </div>
-        <div className="super_end">
-          <Stack direction="row" align="center" justifyContent="space-around">
-            <Typography variant="h5" className="text-center">
-              click
-            </Typography>
-            <Typography variant="h5" className="text-center text-warning">
-              click
-            </Typography>
+        <div className="end">
+          <Stack
+            spacing={3}
+            direction="row"
+            justifyContent="center"
+            marginTop="40px"
+          >
+            <div>
+              <GitHubIcon className="icon" />
+            </div>
+            <div>
+              <DownloadForOfflineIcon className="icon" />
+            </div>
+            <div>
+              <CallIcon className="icon" />
+            </div>
+            <div>
+              <LinkedInIcon className="icon" />
+            </div>
           </Stack>
         </div>
       </div>
