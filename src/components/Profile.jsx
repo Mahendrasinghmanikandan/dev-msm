@@ -14,7 +14,7 @@ const Profile = () => {
           </video>
         </div>
         <div className="middle">
-          <img src="./assets/images/123.jpeg" alt="" />
+          <img src="./assets/images/profile.jpg" alt="" />
         </div>
         <div className="end">
           <Stack spacing={1} textAlign="center" marginTop="35px">

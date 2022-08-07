@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import SettingsIcon from "@mui/icons-material/Settings";
+import DarkModeIcon from "@mui/icons-material/DarkMode";
 import "./navbar.css";
 import { Typography } from "@mui/material";
 import { themes } from "../helper/themeHelper";
@@ -63,7 +63,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           <button className="btn btn-ghost btn-circle">
-            <SettingsIcon
+            <DarkModeIcon
               onClick={() => {
                 setTheme(!theme);
               }}

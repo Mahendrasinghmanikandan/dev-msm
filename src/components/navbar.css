@@ -19,6 +19,7 @@
 .theme-active {
   border-radius: 50% !important;
 }
+/* Home */
 .profileDetails {
   width: 100%;
   height: calc(100vh - 74px);
@@ -59,6 +60,78 @@
   height: 90px;
 }
 .icon{
-  font-size:25px !important;
+  font-size:26px !important;
   cursor: pointer;
+}
+/* About */
+.AboutSection{
+  height: fit-content;
+}
+.AboutSection > .top{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin: 10px;
+  height: 40px;
+  width:fit-content;  
+  background-color: white;
+}
+.About_left{
+  margin:0 20px;
+}
+.icons{
+  font-size:15px !important;
+  margin-right: 3px;
+}
+.breadcrumbs li:first-child{
+  color: blue;
+}
+.breadcrumbs li:last-child{
+  color: gray;
+}
+.about_middle{
+  width: calc(100% - 40px);
+  margin: 20px;
+  height: fit-content;
+  display: flex;
+  gap: 10px; 
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.about_icon{
+  font-size :20px !important;
+  margin: 10px 20px;
+}
+
+.about_middle .text,.aboutme .text{
+  margin: 10px 20px;
+  text-align: justify;
+  word-spacing: 2px;
+}
+.about_middle_items{
+  width: 45%;
+  padding: 10px;
+  border: 1px solid lightgrey;
+  background:rgba(231, 234, 236, 0.495);
+}
+
+.about_title{
+  display: flex;
+  justify-content: space-between;
+  font-size: 35px;
+  margin:20px 10px 0px 10px;
+}
+
+@media all and (orientation: portrait) {
+  .about_middle{
+    flex-direction: column;
+    height: 200%;
+  }
+  .about_middle div{
+    width: 100%;
+  }
+  .education-icons{
+    width: 40px !important;
+  }
 }
