@@ -5,15 +5,15 @@ import { Stack, Typography } from "@mui/material";
 const Educations = ({ Icons, primaryText, secondaryText }) => {
   return (
     <div>
-      <Stack direction="row" gap="20px" alignItems="center">
+      <Stack direction="row" gap="20px" alignItems="start">
         <span>
           <Avatar className="education-icons">
             <Icons />
           </Avatar>
         </span>
         <span>
-          <Typography variant="h5">{primaryText}</Typography>
-          <Typography variant="body1">{secondaryText}</Typography>
+          <Typography variant="h6">{primaryText}</Typography>
+          <Typography variant="body2">{secondaryText}</Typography>
         </span>
       </Stack>
     </div>

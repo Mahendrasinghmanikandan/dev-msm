@@ -1,28 +1,27 @@
 import React, { useState } from "react";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
+import LightModeIcon from "@mui/icons-material/LightMode";
 import "./navbar.css";
-import { Typography } from "@mui/material";
-import { themes } from "../helper/themeHelper";
 import { useSelector, useDispatch } from "react-redux";
 import { changeTheme } from "../features/themeSlice";
+import SubNav from "./Navbar/SubNav";
 
 const Navbar = () => {
-  const [textStatus, setTextStatus] = useState(true);
-  const [theme, setTheme] = useState(false);
   const themeStatus = useSelector((res) => res.themeSlice.value.bg);
   const dispatchTheme = useDispatch();
-  setTimeout(() => {
-    setTextStatus(!textStatus);
-  }, 3000);
+  const [status, setStatus] = useState(false);
   return (
     <div>
-      <div className="navbar bg-base-100 shadow-md">
+      <div className="navbar  shadow-md fixed">
         <div className="navbar-start">
           <div className="dropdown">
-            <label tabindex="0" className="btn btn-ghost btn-circle">
+            <label
+              className="btn btn-ghost btn-circle"
+              onClick={() => setStatus(!status)}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
+                className="h-5 w-5 text-primary"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -35,60 +34,28 @@ const Navbar = () => {
                 />
               </svg>
             </label>
-
-            <ul
-              tabindex="0"
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
-            >
-              <li>
-                <a>Homepage</a>
-              </li>
-              <li>
-                <a>Portfolio</a>
-              </li>
-              <li>
-                <a>About</a>
-              </li>
-            </ul>
           </div>
-        </div>
-        <div className="navbar-center">
-          <h1 className="animate__animated animate__zoomInDown animate__faster">
-            {textStatus ? (
-              <Typography variant="h5">Manikandan M</Typography>
-            ) : (
-              <Typography variant="h5">Web developer</Typography>
-            )}
-          </h1>
+          {status ? <SubNav status={status} setStatus={setStatus} /> : ""}
         </div>
         <div className="navbar-end">
-          <button className="btn btn-ghost btn-circle">
-            <DarkModeIcon
+          {themeStatus === "wireframe" ? (
+            <button
+              className="btn btn-ghost btn-circle  text-primary"
               onClick={() => {
-                setTheme(!theme);
+                dispatchTheme(changeTheme({ bg: "black" }));
               }}
-            />
-          </button>
-          {theme ? (
-            <div className="theme">
-              {themes.map((theme) => {
-                return (
-                  <div
-                    className={`themes animate__animated animate__rollIn animate__faster  ${
-                      themeStatus === theme.theme ? "theme-active" : ""
-                    }`}
-                    style={{ backgroundColor: theme.bg }}
-                    onClick={() => {
-                      dispatchTheme(changeTheme({ bg: theme.theme }));
-                    }}
-                  >
-                    &nbsp;
-                  </div>
-                );
-              })}
-            </div>
+            >
+              <DarkModeIcon />
+            </button>
           ) : (
-            ""
+            <button
+              className="btn btn-ghost btn-circle  text-white"
+              onClick={() => {
+                dispatchTheme(changeTheme({ bg: "wireframe" }));
+              }}
+            >
+              <LightModeIcon />
+            </button>
           )}
         </div>
       </div>
