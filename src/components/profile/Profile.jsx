@@ -1,16 +1,10 @@
-import {
-  Avatar,
-  Button,
-  ButtonGroup,
-  Grid,
-  Stack,
-  Typography,
-} from "@mui/material";
+import { Stack } from "@mui/material";
 import React, { useState } from "react";
 import DownloadForOfflineIcon from "@mui/icons-material/DownloadForOffline";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import CallIcon from "@mui/icons-material/Call";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import "./profile.css";
 const Profile = () => {
   const [textStatus, setTextStatus] = useState(true);
   setTimeout(() => {

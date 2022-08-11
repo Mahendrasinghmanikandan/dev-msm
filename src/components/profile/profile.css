@@ -1,0 +1,48 @@
+.profileDetails {
+  width: 100%;
+  height: calc(100vh - 10px);
+}
+.top video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  margin-bottom: -60px;
+  z-index: -1;
+}
+.profile-content{
+  position: absolute;
+  top: 0;
+  width: 100vw; 
+}
+.middle {
+  /* width: 100vw; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.middle img {
+  width: 140px;
+  height: 140px;
+  clip-path: circle(50%);
+  margin-bottom: 20px;
+}
+.hireButton{
+  position: absolute;
+  bottom:0;
+  width: 100vw;
+  height: 100px;  
+  border: 1px solid lightgrey;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hire_buttons{
+  border: 1px solid lightgrey;
+  width: 100vw;
+  height: 90px;
+}
+.icon{
+  font-size:26px !important;
+  cursor: pointer;
+}

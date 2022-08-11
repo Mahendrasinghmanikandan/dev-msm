@@ -1,0 +1,63 @@
+
+.Resume_Sections {
+  width: 100vw;
+  height: fit-content;
+}
+.title_text {
+  margin: 7% 7% 0px 7% !important;
+}
+.title_content {
+  margin: 10px 6% 0px 6% !important;
+}
+.title_text :first-letter{
+  color: #78cc6d !important;
+}
+
+.sections {
+  display: flex;
+  margin-top: 5%;
+  width: 100vw;
+  height: 100vh;
+}
+
+.about_icon {
+  font-size: 20px !important;
+  margin: 10px 30px;
+  color: #78cc6d !important;
+}
+.education-icons{
+  margin: 10px;
+  color: #78cc6d !important;
+  background-color:white !important;
+}
+
+.text{
+  margin: 20px 20px !important;
+}
+.about_middle_items {
+  width: 50%;
+  padding: 10px;
+  margin: 10px;
+}
+
+.about_title {
+  display: flex;
+  justify-content: space-between;
+  font-size: 35px;
+  margin: 20px 10px 10px 10px;
+}
+
+@media all and (orientation: portrait) {
+  .title_text {
+    margin-top: 20%  !important;
+  }
+  .about_middle_items {
+    width: 100%;
+    height:fit-content;
+  }
+  .title_content {
+    display: flex;
+    flex-direction: column !important;
+    margin: 9 !important;
+  }
+}
