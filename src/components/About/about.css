@@ -49,15 +49,17 @@
 
 @media all and (orientation: portrait) {
   .title_text {
-    margin-top: 20%  !important;
+    margin: 20% 0px 0px 0px  !important;
   }
   .about_middle_items {
     width: 100%;
     height:fit-content;
+    margin: 0px;
+    box-shadow: none !important;
   }
   .title_content {
     display: flex;
     flex-direction: column !important;
-    margin: 9 !important;
+    margin: 0 !important;
   }
 }
