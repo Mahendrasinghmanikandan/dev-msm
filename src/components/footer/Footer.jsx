@@ -11,50 +11,57 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import "./footer.css";
 const Footer = () => {
   return (
-    <div className="footers">
+    <div className="footers ">
       <video preload="auto" autoplay={"autoplay"} loop muted>
         <source src="./assets/video/bg.mp4" />
       </video>
-      <footer class="footer footer-center p-10 text-base-content rounded text-white">
-        <div class="grid grid-flow-col gap-10">
-          <Link to="/">
-            <HomeIcon className="footer-icon" />
-            Home
+      <footer className="footer  p-5 text-white text-base-content">
+        <div>
+          <span className="footer-title ">Pages</span>
+          <Link to="/" className="btn btn-sm btn-link gap-2">
+            <HomeIcon className="footer-icon " />
+            <span className="text-white">Home</span>
           </Link>
-          <Link to="/resume">
+          <Link to="/resume" className="btn btn-sm btn-link gap-2">
             <ArticleIcon className="footer-icon" />
-            Resume
+            <span className="text-white">Resume</span>
           </Link>
-          <Link to="/works">
+          <Link to="/works" className="btn btn-sm btn-link gap-2">
             <HomeRepairServiceIcon className="footer-icon" />
-            Works
+            <span className="text-white">Works</span>
           </Link>
-          <Link to="/contact">
+          <Link to="/contact" className="btn btn-sm btn-link gap-2">
             <ConnectWithoutContactIcon className="footer-icon" />
-            Contact
+            <span className="text-white">Contact</span>
           </Link>
         </div>
         <div>
-          <div class="grid grid-flow-col gap-4">
-            <a>
-              <GitHubIcon className="footer-icon" />
-            </a>
-            <a>
-              <DownloadForOfflineIcon className="footer-icon" />
-            </a>
-            <a>
-              <CallIcon className="footer-icon" />
-            </a>
-            <a>
-              <LinkedInIcon className="footer-icon" />
-            </a>
-          </div>
+          <span class="footer-title">Social</span>
+          <a className="btn btn-sm btn-link gap-2">
+            <GitHubIcon className="footer-icon" />
+            <span className="text-white">GitHub</span>
+          </a>
+          <a className="btn btn-sm btn-link gap-2">
+            <DownloadForOfflineIcon className="footer-icon" />
+            <span className="text-white">Resume</span>
+          </a>
+          <a className="btn btn-sm btn-link gap-2">
+            <CallIcon className="footer-icon" />
+            <span className="text-white">Contact</span>
+          </a>
+          <a className="btn btn-sm btn-link gap-2">
+            <LinkedInIcon className="footer-icon" />
+            <span className="text-white">LinkedIn</span>
+          </a>
         </div>
         <div>
-          <p>
-            Copyright © 2022 - All right reserved by MahendraSinghManikandan
-            Creatives
-          </p>
+          <span className="footer-title">Powered by </span>
+          <div>
+            <p className="footer-title lowercase">
+              Copyright © 2022 - All right reserved by MahendraSinghManikandan
+              Creatives
+            </p>
+          </div>
         </div>
       </footer>
     </div>

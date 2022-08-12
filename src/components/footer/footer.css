@@ -1,5 +1,10 @@
 .footer-icon {
   font-size: 20px !important;
+  color:white !important;
+}
+.footer-title{
+    color: white !important;
+    margin-left: 12px !important;
 }
 
 .footers {
@@ -11,7 +16,7 @@
 
 .footers video {
   width: 100vw;
-  height: 40vh;
+  height: 35vh;
   object-fit: cover;
   z-index: -1;
 }
@@ -24,4 +29,10 @@
   .footer-icon {
     font-size: 15px !important;
   }
+  .footers video {
+  width: 100vw;
+  height: 90vh;
+  object-fit: cover;
+  z-index: -1;
+}
 }
