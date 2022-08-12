@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { Divider, Rating, Stack, Typography } from "@mui/material";
+import { Rating, Stack, Typography } from "@mui/material";
 import React from "react";
 import SchoolIcon from "@mui/icons-material/School";
 import Educations from "./Educations";
@@ -27,7 +27,7 @@ const About = () => {
           <Stack direction="row" className="title_content">
             <div
               id="education"
-              className="shadow-2xl rounded-2xl about_middle_items animate__animated animate__backInLeft animate__slower 3s"
+              className="shadow-2xl rounded-2xl about_middle_items animate__animated animate__backInUp animate__slower 3s"
             >
               <h1 className="about_title">
                 <Typography variant="h4">Educations</Typography>
@@ -61,7 +61,7 @@ Secondary School &nbsp; 2013 to 2014"
             </div>
             <div
               id="experience"
-              className="shadow-2xl rounded-2xl about_middle_items animate__animated animate__backInRight animate__slower 3s"
+              className="shadow-2xl rounded-2xl about_middle_items animate__animated animate__backInUp animate__slower 3s"
             >
               <h1 className="about_title">
                 <Typography variant="h4">Experience</Typography>
@@ -141,7 +141,7 @@ Secondary School &nbsp; 2013 to 2014"
           <Stack direction="row" className="title_content">
             <div
               id="education"
-              className="shadow-2xl rounded-2xl about_middle_items animate__animated animate__backInLeft animate__slower 3s"
+              className="shadow-2xl rounded-2xl about_middle_items animate__animated animate__backInDown animate__slower 3s"
             >
               <h1 className="about_title">
                 Coding
@@ -150,7 +150,6 @@ Secondary School &nbsp; 2013 to 2014"
               <Typography variant="h5" className="text">
                 <Stack spacing={3}>
                   {Languages.map((language) => {
-                    console.log(language);
                     return (
                       <Skills
                         range={language.range}
@@ -164,7 +163,7 @@ Secondary School &nbsp; 2013 to 2014"
             </div>
             <div
               id="experience"
-              className="shadow-2xl rounded-2xl about_middle_items animate__animated animate__backInLeft animate__slower 3s"
+              className="shadow-2xl rounded-2xl about_middle_items animate__animated animate__backInDown animate__slower 3s"
             >
               <h1 className="about_title">
                 KNOWLEDGE

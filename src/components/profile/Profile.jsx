@@ -62,41 +62,6 @@ const Profile = () => {
             </div>
           </div>
         </div>
-        {/* <div className="middle">
-          <img src="./assets/images/profile.jpg" alt="" />
-        </div>
-        <div className="end">
-          <Stack spacing={1} textAlign="center" marginTop="35px">
-            <h1 className="animate__animated animate__zoomInDown animate__faster">
-              {textStatus ? (
-                <Typography variant="h5">Manikandan M</Typography>
-              ) : (
-                <Typography variant="h5">Web developer</Typography>
-              )}
-            </h1>
-          </Stack>
-        </div>
-        <div className="end">
-          <Stack
-            spacing={3}
-            direction="row"
-            justifyContent="center"
-            marginTop="40px"
-          >
-            <div>
-              <GitHubIcon className="icon" />
-            </div>
-            <div>
-              <DownloadForOfflineIcon className="icon" />
-            </div>
-            <div>
-              <CallIcon className="icon" />
-            </div>
-            <div>
-              <LinkedInIcon className="icon" />
-            </div>
-          </Stack>
-        </div> */}
       </div>
     </>
   );

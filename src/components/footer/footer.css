@@ -1,0 +1,27 @@
+.footer-icon {
+  font-size: 20px !important;
+}
+
+.footers {
+  position: relative;
+  width: 100vw;
+  height: fit-content;
+
+}
+
+.footers video {
+  width: 100vw;
+  height: 40vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+}
+@media all and (orientation: portrait) {
+  .footer-icon {
+    font-size: 15px !important;
+  }
+}
