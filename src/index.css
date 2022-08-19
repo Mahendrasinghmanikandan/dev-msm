@@ -13,11 +13,16 @@ p {
   font-family: "Poppins" !important;
 }
 
-  
-.links,a{
+.links,
+a {
   text-decoration: none !important;
 }
 ::-webkit-scrollbar {
-  display:none;
+ display: none !important;
 }
-
+/* ::-webkit-scrollbar-thumb {
+  background: white;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+} */

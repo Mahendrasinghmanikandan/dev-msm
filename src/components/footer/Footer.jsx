@@ -30,10 +30,10 @@ const Footer = () => {
             <HomeRepairServiceIcon className="footer-icon" />
             <span className="text-white">Works</span>
           </Link>
-          <Link to="/contact" className="btn btn-sm btn-link gap-2">
+          {/* <Link to="/contact" className="btn btn-sm btn-link gap-2">
             <ConnectWithoutContactIcon className="footer-icon" />
             <span className="text-white">Contact</span>
-          </Link>
+          </Link> */}
         </div>
         <div>
           <span class="footer-title">Social</span>

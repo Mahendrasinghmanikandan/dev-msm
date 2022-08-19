@@ -30,10 +30,10 @@ const SubNav = ({ setStatus, status }) => {
           </Link>
         </li>
         <li>
-          <Link to="/contact">
+          {/* <Link to="/contact">
             <ConnectWithoutContactIcon />
             Contact
-          </Link>
+          </Link> */}
         </li>
       </ul>
     </div>

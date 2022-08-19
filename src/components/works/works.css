@@ -1,0 +1,63 @@
+.work_Sections {
+  min-height: 100vh !important;
+  width: 100vw !important;
+  height: fit-content;
+  margin-bottom: 20px;
+  overflow: scroll;
+}
+
+.scrolls {
+  width: 100vw !important;
+  height: 100vh !important;
+  overflow: scroll !important;
+}
+.workItems {
+  width: 400px;
+  height: 400px;
+}
+
+.highlight_text {
+  background: gray !important;
+  width: fit-content;
+  padding: 5px;
+  font-size: 12px !important;
+  border-radius: 8px;
+  color: white;
+}
+
+.techs {
+  display: flex;
+  gap: 10px;
+  min-width: 300px;
+  margin: 30px 10px 10px 0px !important;
+  flex-wrap: wrap;
+}
+.previewIcons {
+ margin-top: 20px;
+  
+}
+
+.css-1t6e9jv-MuiCardActions-root {
+  padding: 0px !important;
+}
+
+.projectName {
+  font-weight: 800;
+  font-size: 30px !important;
+}
+.projectName:first-letter {
+  color: #78cc6d !important;
+}
+
+@media all and (orientation: portrait) {
+  .workItems {
+    width: 350px !important;
+    margin: 10px;
+  }
+  .css-1t6e9jv-MuiCardActions-root {
+    padding: 0px !important;
+  }
+  .previewIcons {
+    bottom: 20px;
+  }
+}

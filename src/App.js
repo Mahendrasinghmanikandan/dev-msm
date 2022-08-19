@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 import { Routes, Route } from "react-router-dom";
 import About from "./components/About/About";
 import Footer from "./components/footer/Footer";
-import Contact from "./components/contact/Contact";
+import Works from "./components/works/Works";
 
 const App = () => {
   const themeStatus = useSelector((res) => res.themeSlice.value.bg);
@@ -32,11 +32,11 @@ const App = () => {
           }
         />
         <Route
-          path="/contact"
+          path="/works"
           element={
             <>
               <Navbar />
-              <Contact />
+              <Works />
               <Footer />
             </>
           }

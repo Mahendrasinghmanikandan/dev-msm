@@ -10,7 +10,8 @@ const Contact = () => {
     msg: "",
   });
   const handleSubmit = (_event) => {
-    _event.preventDefault();
+      _event.preventDefault();
+      
   };
   const handleFormChange = (e, field) => {
     setFormData(() => {
