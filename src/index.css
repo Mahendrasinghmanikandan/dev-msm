@@ -11,6 +11,8 @@ h5,
 h6,
 p {
   font-family: "Poppins" !important;
+   -ms-overflow-style: none !important;  /* IE and Edge */
+  scrollbar-width: none !important;  /* Firefox */
 }
 
 .links,
@@ -20,6 +22,7 @@ a {
 ::-webkit-scrollbar {
  display: none !important;
 }
+
 /* ::-webkit-scrollbar-thumb {
   background: white;
 }

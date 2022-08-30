@@ -31,7 +31,7 @@
   }
   .footers video {
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   object-fit: cover;
   z-index: -1;
 }
