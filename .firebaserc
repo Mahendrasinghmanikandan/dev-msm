@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "devmsm-profile"
-  }
+    "default": "devmsm-profile",
+    "staging": "devmsm-profile"
+  },
+  "targets": {},
+  "etags": {}
 }
