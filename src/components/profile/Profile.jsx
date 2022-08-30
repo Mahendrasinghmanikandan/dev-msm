@@ -44,16 +44,21 @@ const Profile = () => {
                     margin="20px 0px"
                   >
                     <div>
-                      <GitHubIcon className="icon text-slate-200" />
+                      <a
+                        target="_blank"
+                        href="https://github.com/Mahendrasinghmanikandan"
+                        rel="noreferrer"
+                      >
+                        <GitHubIcon className="icon text-slate-200" />
+                      </a>
                     </div>
                     <div>
                       <DownloadForOfflineIcon className="icon text-slate-200" />
                     </div>
                     <div>
-                      <CallIcon className="icon text-slate-200" />
-                    </div>
-                    <div>
-                      <LinkedInIcon className="icon text-slate-200" />
+                      <a target="_blank" href="tel:6379698885" rel="noreferrer">
+                        <CallIcon className="icon text-slate-200" />
+                      </a>
                     </div>
                   </Stack>
                   {/* <button class="btn btn-primary">Get Started</button> */}

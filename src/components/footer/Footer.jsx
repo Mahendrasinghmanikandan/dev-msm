@@ -37,7 +37,12 @@ const Footer = () => {
         </div>
         <div>
           <span class="footer-title">Social</span>
-          <a className="btn btn-sm btn-link gap-2">
+          <a
+            className="btn btn-sm btn-link gap-2"
+            target="_blank"
+            href="https://github.com/Mahendrasinghmanikandan"
+            rel="noreferrer"
+          >
             <GitHubIcon className="footer-icon" />
             <span className="text-white">GitHub</span>
           </a>
@@ -45,13 +50,14 @@ const Footer = () => {
             <DownloadForOfflineIcon className="footer-icon" />
             <span className="text-white">Resume</span>
           </a>
-          <a className="btn btn-sm btn-link gap-2">
+          <a
+            className="btn btn-sm btn-link gap-2"
+            target="_blank"
+            href="tel:6379698885"
+            rel="noreferrer"
+          >
             <CallIcon className="footer-icon" />
             <span className="text-white">Contact</span>
-          </a>
-          <a className="btn btn-sm btn-link gap-2">
-            <LinkedInIcon className="footer-icon" />
-            <span className="text-white">LinkedIn</span>
           </a>
         </div>
         <div>

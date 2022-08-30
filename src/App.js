@@ -6,6 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import About from "./components/About/About";
 import Footer from "./components/footer/Footer";
 import Works from "./components/works/Works";
+import NotFount from "./components/404/NotFount";
 
 const App = () => {
   const themeStatus = useSelector((res) => res.themeSlice.value.bg);
@@ -41,7 +42,9 @@ const App = () => {
             </>
           }
         />
+        <Route path="*" element={<NotFount/>} />
       </Routes>
+
     </div>
   );
 };
