@@ -21,7 +21,7 @@ export const Languages = [
     id: 4,
     name: "MySql",
     range: 4,
-    logo: "https://assets.stickpng.com/images/5848104fcef1014c0b5e4950.png",
+    logo: "https://www.liveagent.com/app/uploads/2020/11/MySQL-Logo.png",
   },
   {
     id: 5,
